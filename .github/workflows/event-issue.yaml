@@ -5,5 +5,8 @@ jobs:
         name: Check if the issue is a bug report
         runs-on: ubuntu-latest
         steps:
-            - name: echo github event
-              run: echo "${{github}}"
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: echo github logs
+              run: echo "${{toJson(github.event)}}"
