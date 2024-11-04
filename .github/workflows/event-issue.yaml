@@ -1,4 +1,4 @@
-name: EventIssue Workflow
+name:  issue-event-flow
 on: issues
 jobs:
     step-1:
